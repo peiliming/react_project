@@ -1,0 +1,11 @@
+version: "3"
+services:
+  client:
+    container_name: kanshodo-react-app-container
+    build: ./
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+    command: bash
+    tty: true
