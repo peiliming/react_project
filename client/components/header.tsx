@@ -89,7 +89,6 @@ const Header: FC = () => {
 
 
       </header>
-      {/* <Hamburger /> */}
 
       <div className={`${headerStyles.drawerMenu} ${openMenu ? headerStyles.open : undefined}`}>
         <ul>
@@ -99,14 +98,14 @@ const Header: FC = () => {
             <p>Close</p>
           </div>
           {MENUS.map ((menu, index) => {
-              return (
-                <li key={index}>
-                  <Link href={menu.path}>
-                  <p className={styles.mainTitle}>{menu.title}</p>
-                  </Link>
-                </li>
-              )
-            })}
+            return (
+              <li key={index}>
+                <Link href={menu.path}>
+                <p className={styles.mainTitle}>{menu.title}</p>
+                </Link>
+              </li>
+            )
+          })}
         </ul>
       </div>
 
